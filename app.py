@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    html = "<h3>Hello {name}!</h3>" \
+    html = "<h3>Hi {name}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
-           "<h2>Here is an interesting xkcd cartoon for you: </h2>" \
+           "<h2>Look at this comit: </h2>" \
            '<img src="https://imgs.xkcd.com/comics/containers.png">'
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
