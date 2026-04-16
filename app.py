@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello():
     html = "<h3>Hi {name}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
-           "<h2>Look at this comit: </h2>" \
+           "<h2>Look at this comic: </h2>" \
            '<img src="https://imgs.xkcd.com/comics/containers.png">'
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
